@@ -7,7 +7,7 @@ import java.util.List;
 import crudDao.ProfessorDao;
 import crudEntidades.Professor;
 
-public class servicesProfessor implements Serializable {
+public class ServicesProfessor implements Serializable {
 	
 	private static final long serialVersionUID = -7803325791425670859L;
 	

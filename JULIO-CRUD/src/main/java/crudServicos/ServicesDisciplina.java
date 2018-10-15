@@ -1,13 +1,14 @@
 package crudServicos;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.List;
 
 import crudDao.DisciplinaDao;
 import crudEntidades.Disciplina;
 import util.TransacionalCDI;
 
-public class servicesDisciplina {
+public class ServicesDisciplina {
 
 	public class DisciplinaService implements Serializable ,Service<Disciplina>{
 
@@ -44,4 +45,6 @@ public class servicesDisciplina {
 			return disciplinaDAO.getAll();
 		}
 	}
+
+
 }

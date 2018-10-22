@@ -55,6 +55,8 @@ import javax.inject.Named;
 	   		 professor2.setIdade(professor.getIdade());
 	   		 professor2.setNome(professor.getNome());
 	   		 professor2.setIdProfessor(professor.getIdProfessor());
+	   		professor2.setEmail(professor.getEmail());
+	   		professor2.setUsername(professor.getPassword());
 	    	}
 	    	professor = new Professor();
 		}

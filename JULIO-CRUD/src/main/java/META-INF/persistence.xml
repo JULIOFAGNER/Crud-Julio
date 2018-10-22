@@ -3,7 +3,7 @@
 	<persistence-unit name="JULIO-CRUD">
 	
 	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<non-jta-data-source>java:Faltaconfigurardatasource</non-jta-data-source>
+		<non-jta-data-source>java:/JC</non-jta-data-source>
 	
 		<class>crudEntidades.Turma</class>
 		<class>crudEntidades.Professor</class>

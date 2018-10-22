@@ -1,52 +1,52 @@
 package crudServicos;
 
+
 import java.io.Serializable;
 import java.util.List;
 
-import crudDao.DisciplinaDao;
-import crudEntidades.Disciplina;
+import crudDao.TurmaDao;
+import crudEntidades.Turma;
 
-
-public class ServicesDisciplina implements Serializable {
+public class ServicesTurma implements Serializable {
 	
 	private static final long serialVersionUID = -7803325791425670859L;
 	
-	private DisciplinaDao Dao = new DisciplinaDao ();
+	private TurmaDao Dao = new TurmaDao ();
 	
-	public void save(Disciplina disc) throws ServiceDacException {
+	public void save(Turma turm) throws ServiceDacException {
 		try {
-			Dao.save(disc);
+			Dao.save(turm);
 		} catch (PersistenciaDacException e) {
 			throw new ServiceDacException();
 		}
 	}
 
-	public void update(Disciplina disc) throws ServiceDacException {
+	public void update(Turma turm) throws ServiceDacException {
 		
 		try {
-			Dao.update(disc);
+			Dao.update(turm);
 		} catch (PersistenciaDacException e) {
 			throw new ServiceDacException();
 		}
 	}
 
-	public void delete(Disciplina disc) throws ServiceDacException {
+	public void delete(Turma turm) throws ServiceDacException {
 		try {
-			Dao.delete(disc);
+			Dao.delete(turm);
 		} catch (PersistenciaDacException e) {
 			throw new ServiceDacException();
 		}
 	}
 
-	public Disciplina getByID(int discId) throws ServiceDacException {
+	public Turma getByID(int turmId) throws ServiceDacException {
 		try {
-			return Dao.getByID(discId);
+			return Dao.getByID(turmId);
 		} catch (PersistenciaDacException e) {
 			throw new ServiceDacException();
 		}
 	}
 
-	public List <Disciplina> getAll() throws ServiceDacException {
+	public List <Turma> getAll() throws ServiceDacException {
 		try {
 			return Dao.getAll();
 		} catch (PersistenciaDacException e) {

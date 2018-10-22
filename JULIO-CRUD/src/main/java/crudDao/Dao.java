@@ -37,12 +37,14 @@ public abstract class Dao<E extends Identificavel>{
 		em.remove(obj);
 	}
 
-	public E getByID(Long objId) {
-		return em.find(classe, objId);
+	
+	private E getByID(Long id) {
+		return em.find(classe, id);
 	}
 
 	public List<E> getAll() {
 		Query query = em.createQuery("from " + classe.getSimpleName());
 		return query.getResultList();
 	}
+	
 }
